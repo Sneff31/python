@@ -1,0 +1,7 @@
+print ("Hallo Welt")
+print ("!")
+
+def quadrieren(zahl):
+    print(zahl*zahl)
+
+exit()
