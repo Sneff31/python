@@ -3,11 +3,14 @@
 print("Willkommen das ist ein simpler Chatbot!")
 print("Du kannst die Unterhaltung mit dem Wort 'bye' beenden")
 
+import random
 
 chatbotDictionary = {}
 chatbotDictionary['hallo'] = {'antwort': "Hallo!"}
 chatbotDictionary['geht'] = {'antwort': "Gut",'gegenfrage': "Und dir?"}
 chatbotDictionary['auch'] = {'antwort': "Super! Mir auch"}
+
+randomAnswers = ["Und sonst so?","Das weiß ich nicht","Willst du weiter reden?"]
 
 activ = True
 
@@ -29,4 +32,4 @@ while activ:
             if 'gegenfrage' in chatbotDictionary[einzelwort]:
                 print(chatbotDictionary[einzelwort]['gegenfrage'])
             else:
-                print("Und sonst so?")
+                print(random.choice(randomAnswers))
