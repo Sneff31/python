@@ -171,4 +171,9 @@ for einzelbuchstabe in sorted(list(set(inhalt))):
 benutzereingabe = input("Bitte Zahl eingeben")
 print(benutzereingabe)
 
+
+inhalt = "   https://www.py thon-le rnen.de  "
+ausgabe = inhalt.strip()
+print(ausgabe)
+
 exit()
