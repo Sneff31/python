@@ -176,4 +176,7 @@ inhalt = "   https://www.py thon-le rnen.de  "
 ausgabe = inhalt.strip()
 print(ausgabe)
 
+myGuessingWordArray = {}
+print(myGuessingWordArray.get("test"))
+
 exit()
